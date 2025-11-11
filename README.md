@@ -158,6 +158,25 @@ npm run client
 
 Akses aplikasi di: http://localhost:3000
 
+### Development Mode - Bypass Login
+
+**NEW!** Untuk development tanpa backend atau testing cepat dengan berbagai role:
+
+1. Akses halaman login di http://localhost:3000/login
+2. Klik **"Development Mode (Bypass Login)"**
+3. Pilih role yang ingin di-test (admin, submitter, reviewer1, dll)
+4. Klik **"Bypass Login"**
+
+Fitur ini memungkinkan Anda:
+- ✅ Mengakses aplikasi tanpa backend server
+- ✅ Test UI dengan role yang berbeda secara instant
+- ✅ Demo aplikasi tanpa setup database
+- ✅ Development frontend-only
+
+⚠️ **Catatan**: Bypass login hanya melewati autentikasi. API calls untuk data masih memerlukan backend server.
+
+📖 Lihat panduan lengkap di [BYPASS_LOGIN_GUIDE.md](BYPASS_LOGIN_GUIDE.md)
+
 ### Production Build
 
 ```bash
