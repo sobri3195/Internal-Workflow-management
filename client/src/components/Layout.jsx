@@ -11,7 +11,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 export default function Layout() {
-  const { user, logout } = useAuth();
+  const { user, logout, bypassMode } = useAuth();
   const location = useLocation();
 
   const navigation = [
@@ -28,6 +28,11 @@ export default function Layout() {
 
   return (
     <div className="min-h-screen bg-gray-100 pb-16 md:pb-0">
+      {bypassMode && (
+        <div className="bg-yellow-400 text-black text-center py-1 text-xs font-semibold">
+          ⚠️ DEVELOPMENT MODE - Bypass Authentication Active
+        </div>
+      )}
       <nav className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
