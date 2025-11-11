@@ -4,6 +4,13 @@ Sistem manajemen workflow dokumen internal dengan fitur pengajuan, review berjen
 
 ## Fitur Utama
 
+### 🎨 UI/UX Features
+- ✅ **Responsive Design** - Tampilan optimal di desktop dan mobile
+- ✅ **Bottom Navigation** - Navigasi mobile-friendly di bagian bawah layar
+- ✅ **Role-based Navigation** - Menu yang tampil sesuai dengan role user
+- ✅ **Active State Indication** - Indikator halaman aktif dengan ikon solid
+- ✅ **Modern Design** - TailwindCSS dengan komponen Heroicons
+
 ### 1. Submit (Pengajuan Dokumen)
 - ✅ Form input dokumen (Judul, jenis dokumen, unit kerja, deskripsi, tanggal berlaku)
 - ✅ Upload lampiran (PDF, DOCX, XLSX, gambar)
@@ -62,6 +69,8 @@ Sistem manajemen workflow dokumen internal dengan fitur pengajuan, review berjen
 - React Router
 - React Query
 - Axios
+- Heroicons (untuk ikon)
+- Responsive design dengan bottom navigation
 
 ## Instalasi
 
@@ -154,6 +163,27 @@ Akses aplikasi di: http://localhost:3000
 ```bash
 npm run build
 ```
+
+### Deployment
+
+#### Netlify Deployment
+
+Aplikasi ini sudah dikonfigurasi untuk deployment di Netlify:
+
+1. **Frontend**: Deploy ke Netlify dengan satu klik
+2. **Backend**: Deploy backend ke Heroku, Railway, atau platform lain
+3. Lihat panduan lengkap di [NETLIFY_DEPLOYMENT.md](NETLIFY_DEPLOYMENT.md)
+
+Fitur deployment:
+- ✅ Konfigurasi `netlify.toml` sudah tersedia
+- ✅ SPA routing dengan redirect rules
+- ✅ Build optimization
+- ✅ Environment variable support
+
+#### Full Deployment Guide
+
+Untuk opsi deployment lengkap (VPS, Docker, Cloud platforms), lihat:
+- [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) - Panduan deployment fullstack
 
 ## Struktur Project
 
