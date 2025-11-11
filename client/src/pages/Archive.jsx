@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useQuery } from 'react-query';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+import axios from '../config/axios';
 import { format } from 'date-fns';
 
 export default function Archive() {

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useQuery } from 'react-query';
-import axios from 'axios';
+import axios from '../config/axios';
 import { PlusIcon } from '@heroicons/react/24/outline';
 import { format } from 'date-fns';
 import { useAuth } from '../context/AuthContext';
