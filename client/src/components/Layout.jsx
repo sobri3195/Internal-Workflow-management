@@ -1,5 +1,6 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import { useFallback } from '../context/FallbackContext';
 import BottomNav from './BottomNav';
 import {
   DocumentTextIcon,
@@ -12,6 +13,7 @@ import {
 
 export default function Layout() {
   const { user, logout, bypassMode } = useAuth();
+  const { fallbackMode } = useFallback();
   const location = useLocation();
 
   const navigation = [
@@ -31,6 +33,11 @@ export default function Layout() {
       {bypassMode && (
         <div className="bg-yellow-400 text-black text-center py-1 text-xs font-semibold">
           ⚠️ DEVELOPMENT MODE - Bypass Authentication Active
+        </div>
+      )}
+      {fallbackMode && (
+        <div className="bg-orange-400 text-black text-center py-1 text-xs font-semibold">
+          📦 OFFLINE MODE - Using localStorage for Documents
         </div>
       )}
       <nav className="bg-white shadow-sm">
